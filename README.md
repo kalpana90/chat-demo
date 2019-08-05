@@ -29,7 +29,8 @@ Make sure tomcat server and MySQL server is up and running.
 ```
 - Go to src/main/chat-demo-script.sql inside the "chat-demo-master" directory
 - Run "chat-demo-script.sql" script (To create the initial chat-demo database)
-- Go to /src/main/resources/application.properties and update the database configurations according to your local setup
+- Go to /src/main/resources/application.properties and update the database configurations according to 
+  your local setup
 - Open a terminal
 - Go inside the "chat-demo-master" directory 
 - Run command "mvn clean compile install"
