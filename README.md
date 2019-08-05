@@ -6,7 +6,7 @@ And it contains the below functionalities.
 - Login to the Chat Application
 - List the other users
 - Chat history 
-- Send Chat
+- Send/ Receive Chat
 ```
 
 ## Getting Started
@@ -54,7 +54,7 @@ Guidlines for Testing
 - Once click on one participant, you can see your chat history with him/her.
 - And you can send messages to specific participants and will recieve messages from them.
 - Once you will get a new message a notification will appear and click on the dismiss button.
-- Do not use browser refresh button and back button :)
+- **Do not use browser refresh button and browser back button :)
 ```
 
 ## Authors

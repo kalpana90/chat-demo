@@ -1,5 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/functions" prefix = "fn" %>
 <html>
 <head>
     <title>Dashboard</title>
@@ -21,7 +22,11 @@
     <form action="${pageContext.request.contextPath}/messages" method="post" modelAttribute="messageRequestDTO">
 
         <a href="#" class="chat-row">
-            <div class="letter">m</div>
+
+            <c:set var = "string1" value ='${users.name}' />
+            <c:set var = "string2" value = "${fn:substring(string1,0,1)}" />
+
+            <div class="letter">${string2}</div>
             <p class="name">${users.name}</p>
             <button type="submit" class="btn-hidden"></button>
         </a>

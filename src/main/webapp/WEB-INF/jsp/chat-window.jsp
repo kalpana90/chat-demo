@@ -2,6 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/functions" prefix = "fn" %>
 <html>
 <head>
     <script src="<c:url value="/js/socket.js" />"></script>
@@ -19,7 +20,9 @@
         <input type="hidden" name="userId" value="${userId}"/>
         <div class="title">
             <button class="back">&lsaquo;</button>
-            <h2 class="letter">m</h2>${userName}
+            <c:set var = "string1" value ='${userName}' />
+            <c:set var = "string2" value = "${fn:substring(string1,0,1)}" />
+            <h2 class="letter">${string2}</h2>${userName}
         </div>
     </form>
 
